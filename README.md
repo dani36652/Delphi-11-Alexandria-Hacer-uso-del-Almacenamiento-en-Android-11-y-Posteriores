@@ -3,7 +3,7 @@
 --ANTES DE REALIZAR ESTO RECUERDA: 
  SOLO ES PARA DELPHI ALEXANDRIA (11+)
 -- NO SE DEBE TENER ABIERTO EL IDE
---UNA FINALIZADO SE RECOMIENDA REINICIAR SU EQUIPO
+--UNA VEZ FINALIZADO SE RECOMIENDA REINICIAR SU EQUIPO
 
 Documentacion 1: https://developer.android.com/training/data-storage/manage-all-files
 Documentacion 2: https://developer.android.com/training/data-storage?hl=es-419
