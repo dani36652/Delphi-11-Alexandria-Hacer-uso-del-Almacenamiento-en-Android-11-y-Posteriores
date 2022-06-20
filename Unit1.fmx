@@ -1,0 +1,30 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 439
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Button1: TButton
+    Align = Top
+    Size.Width = 439.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Estatus del permiso'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Align = Bottom
+    Position.Y = 436.000000000000000000
+    Size.Width = 439.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Uso del almacenamiento'
+    OnClick = Button2Click
+  end
+end

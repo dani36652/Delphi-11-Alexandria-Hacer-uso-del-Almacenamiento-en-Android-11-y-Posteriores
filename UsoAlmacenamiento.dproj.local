@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/06/19 19:39:18.272,=C:\Users\soporte\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/19 19:40:52.173,C:\Users\soporte\Documents\Embarcadero\Studio\Projects\UsoAlmacenamiento.dproj=C:\Users\soporte\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/06/19 19:41:39.654,C:\Users\soporte\Desktop\Personales\MisApps\AlmacenamientoAndroid11\Unit1.pas=C:\Users\soporte\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/19 19:41:39.654,C:\Users\soporte\Desktop\Personales\MisApps\AlmacenamientoAndroid11\Unit1.fmx=C:\Users\soporte\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2022/06/19 19:41:40.857,C:\Users\soporte\Desktop\Personales\MisApps\AlmacenamientoAndroid11\UsoAlmacenamiento.dproj=C:\Users\soporte\Documents\Embarcadero\Studio\Projects\UsoAlmacenamiento.dproj</Transaction>
+  </Transactions>
+  <ActiveMobileDevice>   <NoProfile Android="9LYPFMTSXC6HRS45" Android64="9LYPFMTSXC6HRS45"/>
+  </ActiveMobileDevice>
+</BorlandProject>
