@@ -1,7 +1,7 @@
 {*******************************************************}
 {                                                       }
 {           CodeGear Delphi Runtime Library             }
-{ Copyright(c) 2013-2022 Embarcadero Technologies, Inc. }
+{ Copyright(c) 2013-2023 Embarcadero Technologies, Inc. }
 {              All rights reserved                      }
 {                                                       }
 {*******************************************************}
@@ -3907,8 +3907,8 @@ type
     {class} function _GetACTION_LOCALE_SETTINGS: JString; cdecl;
     {class} function _GetACTION_LOCATION_SOURCE_SETTINGS: JString; cdecl;
     {class} function _GetACTION_MANAGE_ALL_APPLICATIONS_SETTINGS: JString; cdecl;
+    {class} function _GetACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION: JString; cdecl;
     {class} function _GetACTION_MANAGE_APPLICATIONS_SETTINGS: JString; cdecl;
-    {class} function _GetACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION :JString; cdecl;
     {class} function _GetACTION_MANAGE_DEFAULT_APPS_SETTINGS: JString; cdecl;
     {class} function _GetACTION_MANAGE_OVERLAY_PERMISSION: JString; cdecl;
     {class} function _GetACTION_MANAGE_UNKNOWN_APP_SOURCES: JString; cdecl;
@@ -3987,8 +3987,8 @@ type
     {class} property ACTION_LOCALE_SETTINGS: JString read _GetACTION_LOCALE_SETTINGS;
     {class} property ACTION_LOCATION_SOURCE_SETTINGS: JString read _GetACTION_LOCATION_SOURCE_SETTINGS;
     {class} property ACTION_MANAGE_ALL_APPLICATIONS_SETTINGS: JString read _GetACTION_MANAGE_ALL_APPLICATIONS_SETTINGS;
-    {class} property ACTION_MANAGE_APPLICATIONS_SETTINGS: JString read _GetACTION_MANAGE_APPLICATIONS_SETTINGS;
     {class} property ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION: JString read _GetACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION;
+    {class} property ACTION_MANAGE_APPLICATIONS_SETTINGS: JString read _GetACTION_MANAGE_APPLICATIONS_SETTINGS;
     {class} property ACTION_MANAGE_DEFAULT_APPS_SETTINGS: JString read _GetACTION_MANAGE_DEFAULT_APPS_SETTINGS;
     {class} property ACTION_MANAGE_OVERLAY_PERMISSION: JString read _GetACTION_MANAGE_OVERLAY_PERMISSION;
     {class} property ACTION_MANAGE_UNKNOWN_APP_SOURCES: JString read _GetACTION_MANAGE_UNKNOWN_APP_SOURCES;

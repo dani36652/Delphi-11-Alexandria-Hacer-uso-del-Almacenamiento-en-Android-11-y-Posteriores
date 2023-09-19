@@ -1,7 +1,7 @@
 {*******************************************************}
 {                                                       }
 {           CodeGear Delphi Runtime Library             }
-{ Copyright(c) 2013-2022 Embarcadero Technologies, Inc. }
+{ Copyright(c) 2013-2023 Embarcadero Technologies, Inc. }
 {              All rights reserved                      }
 {                                                       }
 {*******************************************************}
@@ -836,8 +836,8 @@ type
     {class} function getRootDirectory: JFile; cdecl;
     {class} function getStorageState(path: JFile): JString; cdecl;//Deprecated
     {class} function isExternalStorageEmulated: Boolean; cdecl; overload;
-    {class} function isExternalStorageManager: Boolean; cdecl;
     {class} function isExternalStorageEmulated(path: JFile): Boolean; cdecl; overload;
+    {class} function isExternalStorageManager: Boolean; cdecl; overload;
     {class} function isExternalStorageRemovable: Boolean; cdecl; overload;
     {class} function isExternalStorageRemovable(path: JFile): Boolean; cdecl; overload;
     {class} property DIRECTORY_ALARMS: JString read _GetDIRECTORY_ALARMS write _SetDIRECTORY_ALARMS;

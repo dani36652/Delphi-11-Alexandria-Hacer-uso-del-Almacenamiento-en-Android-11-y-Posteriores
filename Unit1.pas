@@ -9,8 +9,8 @@ uses
   Androidapi.jni, Androidapi.Jni.app,
   Androidapi.Jni.GraphicsContentViewText, Androidapi.JniBridge,
   Androidapi.JNI.Os, Androidapi.Jni.Telephony,
-  Androidapi.JNI.JavaTypes, Androidapi.Helpers,
-  Androidapi.JNI.Widget,System.Permissions,
+  Androidapi.JNI.JavaTypes,
+  Androidapi.JNI.Widget,System.Permissions, Androidapi.Helpers,
   Androidapi.Jni.Provider,Androidapi.Jni.Net,System.Messaging,
   fmx.TextLayout,AndroidAPI.JNI.Support,FMX.VirtualKeyboard,
  {$ENDIF}
@@ -54,7 +54,7 @@ begin
  end;
  if TJEnvironment.JavaClass.isExternalStorageManager then
  begin
- ShowMessage('Si hay permiso al almacenamiento');
+ ShowMessage('Si hay acceso al almacenamiento');
  end else
  begin
  intent:=TJIntent.Create;
@@ -71,16 +71,23 @@ end;
 procedure TForm1.Button2Click(Sender: TObject);
 var x:TMemo;
 begin
-x:=TMemo.Create(nil);
-x.Parent:=self;
-x.Text:='Hola';
- if TJEnvironment.JavaClass.isExternalStorageManager then
- begin
-  if not TDirectory.Exists('/sdcard/'+'Dir1') then TDirectory.CreateDirectory('/sdcard/'+'Dir1');
- x.Lines.SaveToFile('/sdcard/'+'Dir1/'+'Arch1.txt');
- x.Free;
- ShowMessage('Se creó el archivo con éxito');
- end else showMessage('Sin permiso al almacenamiento');
+  try
+    x:=TMemo.Create(nil);
+    x.Parent:= nil;
+    x.Text:='¡Ya tienes acceso al almacenamiento!';
+    if TJEnvironment.JavaClass.isExternalStorageManager then
+    begin
+      try
+        if not TDirectory.Exists('/sdcard/'+'Dir1') then TDirectory.CreateDirectory('/sdcard/'+'Dir1');
+        x.Lines.SaveToFile('/sdcard/'+'Dir1/'+'Arch1.txt');
+        ShowMessage('Se creó el archivo con éxito');
+      except on E: exception do
+        raise;
+      end;
+    end else showMessage('No se tiene acceso al almacenamiento');
+  finally
+    FreeAndNil(x);
+  end;
 end;
 
 end.
